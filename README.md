@@ -12,7 +12,7 @@
   - [Local](#Local)
 - [Authors](#Authors)
 - [License](#License)
-- [Try-It](#Try-It)
+- [Try It](#Try-It)
 
 ## Features
 
@@ -122,7 +122,7 @@ Documentation for the API can be accessed through the URL
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-## Try it out
+## Try It
 
 Live preview of the API in action
 
