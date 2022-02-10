@@ -101,12 +101,12 @@ To run this application, you will need to add the following Environment Variable
 
 Documentation for the API can be accessed through the URL 
 
-- For [SwaggerUI](https://swagger.io/tools/swagger-ui/)
+- For SwaggerUI
     ```
     URL/docs 
     ```
 
-- For [ReDoc](https://github.com/Redocly/redoc)
+- For ReDoc
     ```
     URL/redoc 
     ```
