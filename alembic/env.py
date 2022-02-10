@@ -9,11 +9,19 @@ from app.models import Base
 from app.config import settings
 
 
+if settings.database_url is not None:
+    if settings.database_url and settings.database_url.startswith("postgres://"):
+        settings.database_url = settings.database_url.replace("postgres://", "postgresql+psycopg2://", 1)
+    SQLALCHEMY_DATABASE_URL = settings.database_url
+else:
+    SQLALCHEMY_DATABASE_URL = f'postgresql+psycopg2://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}'
+
+
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
 config.set_main_option(
-    "sqlalchemy.url", f'postgresql+psycopg2://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}'
+    "sqlalchemy.url", SQLALCHEMY_DATABASE_URL
 )
 
 # Interpret the config file for Python logging.

@@ -1,0 +1,8 @@
+.env
+.gitignore
+venv/
+__pycache__
+logo.svg
+docker-compose.yml
+docker-compose-dev.yml
+Procfile
