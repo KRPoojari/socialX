@@ -10,6 +10,7 @@
 - [Installation](#Installation-and-Usage)
   - [Docker](#Docker)
   - [Local](#Local)
+- [Documentation](#Documentation)
 - [Authors](#Authors)
 - [License](#License)
 - [Try It](#Try-It)
@@ -92,6 +93,11 @@ To run this application, you will need to add the following Environment Variable
 ```bash 
   uvicorn app.main:app --host 0.0.0.0 --port ${PORT}
 ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+## Documentation
 
 Documentation for the API can be accessed through the URL 
 
