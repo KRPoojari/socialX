@@ -1,5 +1,4 @@
 from pydantic import BaseSettings
-import os
 from typing import Optional
 
 

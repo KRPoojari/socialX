@@ -6,6 +6,3 @@ setup:
 build:
   docker:
     web: Dockerfile
-  config:
-    ALGORITHM: HS256
-    ACCESS_TOKEN_EXPIRE_MINUTES: 20
